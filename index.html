@@ -11,19 +11,18 @@ body {
 }
 
 .header {
-  background-color: #f1f1f1;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
 }
 
 .nav {
-  padding: 10px 16px;
+  padding: 16px;
   background: #555;
   color: #f1f1f1;
 }
 
 .content {
-  padding: 16px;
+  padding: 5px;
 }
 
 ul {
@@ -32,9 +31,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
 
 li {
@@ -62,6 +58,16 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 </style>
 </head>
 <body>
@@ -72,7 +78,7 @@ li a:hover:not(.active) {
 
 <div class="nav" id="mynav">
   <ul>
-    <li><a href="#title">Home</a></li>
+    <li><a class="active" href="#title">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -117,6 +123,21 @@ li a:hover:not(.active) {
   LinkedIn
 </a>
 </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var nav = document.getElementById("mynav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
