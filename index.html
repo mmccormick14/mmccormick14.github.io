@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-  padding: 5px;
+  padding: 16px;
 }
 
 ul {
@@ -73,7 +73,7 @@ li a:hover:not(.active) {
 <body>
 
 <div class="header" id = "title">
-  <h1>Mike McCormick</h1>
+  <h1>Mike McCormick v2</h1>
 </div>
 
 <div class="nav" id="mynav">
@@ -128,7 +128,7 @@ li a:hover:not(.active) {
 window.onscroll = function() {myFunction()};
 
 var nav = document.getElementById("mynav");
-var sticky = header.offsetTop;
+var sticky = nav.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
