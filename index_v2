@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Verdana;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 30px;
+  background: #555;
+  color: #black;
+}
+
+.content {
+  padding: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+  <div class="top-container">
+    <font face="Verdana" size="12">
+    <h1>Mike McCormick</h1>
+  </div>
+
+<div class="header" id="myHeader">
+  <!--Header(start)-->
+	<table id="header" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td>
+							<font face="Verdana" size="12">
+								<b>Mike McCormick</b>
+							</font>
+						</td>
+
+						<td width="15%">
+						</td>
+
+						<td>
+							<a href="#about" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									About
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#projects" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Projects
+								</font>
+							</a>
+						</td>
+
+            <td>
+							|
+						</td>
+
+						<td>
+							<a href="#footer" style="text-decoration:none">
+								<font face="Verdana" size="5" color=black>
+									Contact
+								</font>
+							</a>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+</div>
+
+<div class="content">
+  <!--About(start)-->
+	<table id="about" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="left"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="black">
+								About
+                <br />
+                <br />
+                <br />
+                <br />
+
+							</font>
+							<hr color="black" width="140" align="left">
+						</td>
+					</tr>
+
+						<td width="60%">
+							<font face="Verdana" size="4"
+								color="black">
+								xxx
+                <br />
+                <br />
+								<hr color="black">
+								xxx
+                <br />
+                <br />
+                <br />
+								<hr color="black">
+								<b>xxx</b>
+                <br />
+                <br />
+                <br />
+							</font>
+						</td>
+					</tr>
+				</table>
+				<hr color="black">
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+
+	<!--Projects(start)-->
+	<table id="projects" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+            <td height="180" align="left"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="black">
+								Projects
+							</font>
+							<hr color="black" width="190" align="left">
+						</td>
+					</tr>
+
+					<tr>
+						<td height="10">
+							<font face="Times New Roman"
+								size="5" color="black">
+								<ul>
+									<li>
+										<a href="#" style="text-decoration:none">
+											 xxx
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+                       <br />
+										</a>
+									</li>
+                  <li>
+										<a href="#" style="text-decoration:none">
+											 xxx
+										</a>
+									</li>
+								</ul>
+							</font>
+						</td>
+
+					</tr>
+        </table>
+				<hr color="black">
+			</td>
+		</tr>
+	</table>
+	<!--Projects(end)-->
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="13%" valign="top">
+              <font face="Verdana" size="5" color=black>
+                Find me on
+							<a href="https://www.linkedin.com/in/mmccormick14/" style="text-decoration:none">
+								LinkedIn
+							</a>
+              </font>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer1(end)-->
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
