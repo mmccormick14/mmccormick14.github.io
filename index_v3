@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike McCormick</title>
 <style>
-body, html {
-  height: 100%;
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("flatirons.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
+.header {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+
+  padding: 100px;
+    background-image: url("flatirons.jpg");
 }
 
 .nav {
@@ -84,59 +74,30 @@ li a:hover:not(.active) {
 </head>
 <body>
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:38px">Mike McCormick</h1>
-    <br>
-    <br>
-    <br>
-  </div>
+<div class="header" id = "title">
+    <h1>Mike McCormick</h1>
 </div>
 
 <div class="nav" id="mynav">
   <ul>
     <li><a class="active" href="#title">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
 
-<div class="content" id="portfolio">
-  <h1>Portfolio</h1>
-  <p>content will stick to the top when you reach its scroll position.</p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will stick to the top when you reach its scroll position.</p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will stick to the top when you reach its scroll position.</p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
-  <p>content will </p>
+<div class="content" id="about">
+  <h1>About</h1>
+  <p>I am currently a MBA + MS Business Analytics student at the University of Colorado.</p>
+  <p>I built this website to document my projects and studies.</p>
+  <p>My goal is to turn structured and unstructured data into actionable business insights.</p>
+  <p>I use SQL, R, and Python for my data projects.</p>
+  <hr color="black">
+</div>
+
+<div class="content" id="projects">
+  <h1>Projects</h1>
   <p>content will stick to the top when you reach its scroll position.</p>
   <p>content will </p>
   <p>content will </p>
@@ -172,7 +133,6 @@ function myFunction() {
   }
 }
 </script>
-
 
 </body>
 </html>
